@@ -144,6 +144,49 @@ curl -s https://yuya-soneda.gitbook.io/reearth/llms-full.txt
 
 ---
 
+## 7. MCP サーバー
+
+GitBook には MCP（Model Context Protocol）の系統が **2 つ** あります。用途が違うので混同に注意。
+
+### (1) サイト MCP サーバー（公式・自動生成）— 公開ドキュメントを読ませる
+
+公開サイトごとに **MCP サーバが自動生成**され、Claude / Cursor などの AI クライアントから**ドキュメントを読み取り専用で参照**できます。サイト URL のルートに `/~gitbook/mcp` を付けるだけです。
+
+| 項目 | 内容 |
+| --- | --- |
+| **エンドポイント** | `<サイトURL>/~gitbook/mcp` |
+| **本サイトの例** | `https://yuya-soneda.gitbook.io/reearth/~gitbook/mcp`（稼働確認済み） |
+| **アクセス** | 読み取り専用（検索・ページ取得）。非表示ページも MCP からは参照可能 |
+| **前提条件** | **Site customization → Page actions が有効**であること（無効化すると 404） |
+| **プロトコル** | JSON-RPC over HTTP（POST）。GET は 405 が返る = 正常 |
+
+クライアント設定例（Claude Desktop / Cursor などの MCP 設定）:
+
+```json
+{
+  "mcpServers": {
+    "reearth-docs": {
+      "url": "https://yuya-soneda.gitbook.io/reearth/~gitbook/mcp"
+    }
+  }
+}
+```
+
+> `llms.txt` / `llms-full.txt`（セクション 6）が「テキストを丸ごと渡す」のに対し、サイト MCP サーバは「AI が必要なページを**検索して取りに行く**」用途。大規模ドキュメントでは MCP の方がトークン効率が良い。
+
+### (2) API 用 MCP サーバー（コミュニティ）— GitBook を操作する
+
+GitBook **API をラップしたコミュニティ製 MCP**（例：[gitbook-mcp](https://github.com/lucasbenevinuto/gitbook-mcp)）を使うと、AI エージェントから **Space / ページ / 変更リクエスト / Git Sync の操作**（書き込み系含む）が可能。こちらは公開サイトの参照ではなく、**コンテンツ管理の自動化**向けで、別途 GitBook API トークンが必要です。
+
+| | (1) サイト MCP（公式） | (2) API MCP（コミュニティ） |
+| --- | --- | --- |
+| 目的 | 公開ドキュメントを **読む** | GitBook を **操作する** |
+| 認証 | 不要（公開サイト） | GitBook API トークン |
+| 範囲 | 読み取り専用 | 読み書き（管理操作） |
+| 用途 | AI への docs 提供 | コンテンツ管理の自動化 |
+
+---
+
 ## 参考リンク
 
 - [GitBook Pricing（公式）](https://www.gitbook.com/pricing)
@@ -152,3 +195,5 @@ curl -s https://yuya-soneda.gitbook.io/reearth/llms-full.txt
 - [Localize your docs with variants](https://gitbook.com/docs/guides/content-organization-and-localization/localize-your-docs-with-variants-in-gitbook)
 - [Use GitHub Actions to translate GitBook pages](https://gitbook.com/docs/guides/content-organization-and-localization/use-github-actions-to-translate-gitbook-pages)
 - [Content variants | GitBook Docs](https://gitbook.com/docs/docs-site/site-structure/variants)
+- [MCP servers for published docs | GitBook Docs](https://gitbook.com/docs/ai-and-search/mcp-servers-for-published-docs)（エンドポイント: `<サイトURL>/~gitbook/mcp`）
+- [gitbook-mcp（API 操作用コミュニティ MCP）](https://github.com/lucasbenevinuto/gitbook-mcp)

@@ -1,40 +1,40 @@
 ---
-description: Manage API keys and monitor usage across your workspace.
+description: ワークスペース全体で API キーを管理し、使用状況を監視します。
 icon: rectangle-terminal
 ---
 
-# Managing API keys
+# API キーの管理
 
-API keys allow external tools and automations to interact with your workspace programmatically. Workspace admins can create, view, and revoke keys at any time.
+API キーを使うと、外部ツールや自動化処理がプログラムからワークスペースにアクセスできるようになります。ワークスペースの管理者は、いつでもキーの作成、表示、失効ができます。
 
-### Creating an API key
+### API キーを作成する
 
-Go to **Settings → API → Keys** and click **New API key**. Give the key a descriptive name (e.g. "CI/CD integration" or "Internal dashboard") so you can identify it later.
+**設定 → API → キー** に移動し、**新しい API キー** をクリックします。後で識別できるように、キーにはわかりやすい名前（例：「CI/CD 連携」や「社内ダッシュボード」）を付けてください。
 
 {% hint style="warning" %}
-Copy your key immediately after creation — it won't be shown again. If you lose it, you'll need to revoke and recreate it.
+キーは作成直後にコピーしてください。再表示はされません。紛失した場合は、失効させて作り直す必要があります。
 {% endhint %}
 
-### Key permissions
+### キーの権限
 
-When creating a key, you can scope its permissions:
+キーを作成する際に、その権限のスコープを設定できます。
 
-| Permission | What it allows                           |
-| ---------- | ---------------------------------------- |
-| **Read**   | Fetch content, settings, and member data |
-| **Write**  | Create and update content                |
-| **Admin**  | Manage settings, members, and billing    |
+| 権限       | 許可される操作                  |
+| -------- | ------------------------ |
+| **読み取り** | コンテンツ、設定、メンバー情報の取得       |
+| **書き込み** | コンテンツの作成と更新              |
+| **管理**   | 設定、メンバー、請求の管理            |
 
-Use the minimum permissions necessary for each integration.
+各連携には、必要最小限の権限を付与してください。
 
-### Rotating a key
+### キーをローテーションする
 
-To rotate a key, create a new one, update your integration to use it, then revoke the old key. There's no automated rotation — this is a manual process.
+キーをローテーションするには、新しいキーを作成し、連携側でそれを使うよう更新してから、古いキーを失効させます。自動ローテーションの機能はなく、手動での作業になります。
 
-### Revoking a key
+### キーを失効させる
 
-Go to **Settings → API → Keys**, find the key, and click **Revoke**. Revocation is immediate — any requests using that key will fail instantly.
+**設定 → API → キー** に移動し、対象のキーを見つけて **失効** をクリックします。失効はただちに反映され、そのキーを使ったリクエストは即座に失敗します。
 
-### Monitoring usage
+### 使用状況を監視する
 
-Under **Settings → API → Usage**, you can see request counts per key over the past 30 days. This is useful for spotting unexpected usage or identifying which integrations are most active.
+**設定 → API → 使用状況** では、過去 30 日間のキーごとのリクエスト数を確認できます。想定外の使用に気づいたり、最もアクティブな連携を特定したりするのに役立ちます。

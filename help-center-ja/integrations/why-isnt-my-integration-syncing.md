@@ -1,36 +1,36 @@
 ---
-description: Common reasons your integration stops syncing, and how to fix them.
+description: 連携の同期が止まるよくある原因と、その解決方法。
 icon: rotate-exclamation
 ---
 
-# Why isn't my integration syncing?
+# 連携が同期されないのはなぜ？
 
-If content from a connected app isn't appearing or updating as expected, work through the checks below.
+接続済みアプリのコンテンツが期待どおりに表示・更新されない場合は、以下のチェック項目を順に確認してください。
 
-### 1. Check the connection status
+### 1. 接続状態を確認する
 
-Go to **Settings → Integrations** and find the affected integration. If the status shows **Disconnected** or **Error**, click **Reconnect** and follow the prompts to re-authenticate.
+**設定 → 連携** に移動し、対象の連携を見つけます。状態が **切断済み** または **エラー** と表示されている場合は、**再接続** をクリックし、画面の指示に従って再認証してください。
 
-### 2. Check your permissions
+### 2. 権限を確認する
 
-The account used to connect the integration needs sufficient permissions in the third-party app. For example, connecting a content source requires at least **read access** to the relevant data.
+連携の接続に使ったアカウントには、サードパーティアプリ側で十分な権限が必要です。たとえば、コンテンツソースを接続するには、対象データに対して少なくとも **読み取りアクセス** が必要です。
 
 {% hint style="warning" %}
-If the account that originally connected the integration has left your organisation or had their permissions changed, the integration will stop working. Reconnect using an account with the correct permissions.
+連携を最初に接続したアカウントが組織を離れたり、権限が変更されたりすると、連携は動作しなくなります。適切な権限を持つアカウントで再接続してください。
 {% endhint %}
 
-### 3. Check for rate limits
+### 3. レート制限を確認する
 
-Some third-party platforms impose rate limits on API access. If you're syncing large amounts of content or triggering many syncs in quick succession, you may be temporarily throttled. Wait a few minutes and try again.
+一部のサードパーティプラットフォームは、API アクセスにレート制限を設けています。大量のコンテンツを同期したり、短時間に多数の同期をトリガーしたりすると、一時的に制限される場合があります。数分待ってから再試行してください。
 
-### 4. Trigger a manual sync
+### 4. 手動で同期を実行する
 
-On the integration settings page, click **Sync now** to force an immediate sync rather than waiting for the next scheduled run.
+連携の設定ページで **今すぐ同期** をクリックすると、次回の定期実行を待たずに即座に同期を強制できます。
 
-### 5. Review the sync log
+### 5. 同期ログを確認する
 
-Under **Settings → Integrations → \[Integration name] → Logs**, you'll find a record of recent sync attempts and any errors. Error messages here are usually specific enough to identify the problem.
+**設定 → 連携 → \[連携名] → ログ** には、最近の同期試行とエラーの記録があります。ここに表示されるエラーメッセージは通常、問題を特定できる程度に具体的です。
 
-### Still not working?
+### それでも解決しない場合
 
-If none of the above resolves the issue, [contact support](https://example.com/support) with your sync log attached — this helps us diagnose the problem quickly.
+上記のいずれでも問題が解決しない場合は、同期ログを添えて [サポートにお問い合わせ](https://example.com/support) ください。問題の迅速な切り分けに役立ちます。

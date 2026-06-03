@@ -1,26 +1,25 @@
 ---
 description: >-
-  Understand the API rate limits that apply to your plan, and what to do if you
-  hit them.
+  ご利用プランに適用される API レート制限と、制限に達した場合の対処法を理解しましょう。
 icon: gauge-high
 ---
 
-# API rate limits and quotas
+# API のレート制限とクォータ
 
-Rate limits protect platform stability and ensure fair usage across all customers. If you're building an integration or automation on top of our API, it's worth understanding how they work.
+レート制限は、プラットフォームの安定性を守り、すべてのお客様にとって公平な利用を確保するためのものです。当社の API 上で連携や自動化を構築している場合は、その仕組みを理解しておくとよいでしょう。
 
-### Limits by plan
+### プランごとの制限
 
-| Plan       | Requests per minute | Requests per day |
-| ---------- | ------------------- | ---------------- |
-| Free       | 60                  | 1,000            |
-| Pro        | 300                 | 10,000           |
-| Business   | 1,000               | 100,000          |
-| Enterprise | Custom              | Custom           |
+| プラン        | 1 分あたりのリクエスト数 | 1 日あたりのリクエスト数 |
+| ---------- | ------------- | ------------- |
+| Free       | 60            | 1,000         |
+| Pro        | 300           | 10,000        |
+| Business   | 1,000         | 100,000       |
+| Enterprise | カスタム          | カスタム          |
 
-### Rate limit headers
+### レート制限ヘッダー
 
-Every API response includes headers showing your current usage:
+すべての API レスポンスには、現在の使用状況を示すヘッダーが含まれます。
 
 ```
 X-RateLimit-Limit: 300
@@ -28,16 +27,16 @@ X-RateLimit-Remaining: 241
 X-RateLimit-Reset: 1714560000
 ```
 
-`X-RateLimit-Reset` is a Unix timestamp indicating when your limit resets.
+`X-RateLimit-Reset` は、制限がリセットされる時刻を示す Unix タイムスタンプです。
 
-### What happens when you hit the limit
+### 制限に達したときに起こること
 
-Requests that exceed the rate limit receive a `429 Too Many Requests` response. Your client should back off and retry after the time indicated in the `Retry-After` header.
+レート制限を超えたリクエストには `429 Too Many Requests` レスポンスが返されます。クライアント側では、`Retry-After` ヘッダーで指定された時間だけ待ってから再試行するようにしてください。
 
 {% hint style="warning" %}
-Repeatedly hammering the API after receiving a 429 may result in a temporary ban on your API key. Always implement exponential backoff in your integration.
+429 を受け取った後に API へのリクエストを繰り返し続けると、API キーが一時的に利用停止になる場合があります。連携には必ず指数バックオフを実装してください。
 {% endhint %}
 
-### Increasing your limits
+### 制限を引き上げる
 
-If your use case requires higher limits, upgrading your plan is the first step. For Enterprise-level requirements, [contact us](https://example.com/contact) to discuss custom quotas.
+より高い制限が必要なユースケースの場合は、まずプランのアップグレードを検討してください。Enterprise レベルの要件については、[お問い合わせ](https://example.com/contact) のうえカスタムクォータについてご相談ください。

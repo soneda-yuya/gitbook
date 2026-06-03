@@ -1,36 +1,35 @@
 ---
 description: >-
-  Understand the difference between workspaces and projects, and when to use
-  each.
+  ワークスペースとプロジェクトの違い、そしてそれぞれをいつ使うべきかを理解しましょう。
 icon: sitemap
 ---
 
-# What's the difference between a workspace and a project?
+# ワークスペースとプロジェクトの違いは？
 
-A **workspace** is your top-level organisational container — think of it as your company or team's home. Everything lives inside a workspace: members, billing, settings, and all your projects.
+**ワークスペース** は最上位の組織コンテナで、会社やチームの拠点だと考えてください。メンバー、請求、設定、そしてすべてのプロジェクトなど、あらゆるものがワークスペースの中に存在します。
 
-A **project** is where your actual work happens. Each project has its own content, permissions, and settings, but it always belongs to a workspace.
+**プロジェクト** は、実際の作業が行われる場所です。各プロジェクトは独自のコンテンツ、権限、設定を持ちますが、必ずワークスペースに属します。
 
-### Quick comparison
+### かんたん比較
 
-|             | Workspace                  | Project                  |
-| ----------- | -------------------------- | ------------------------ |
-| Contains    | Members, projects, billing | Content, pages, files    |
-| Billing     | Per workspace              | Inherited from workspace |
-| Permissions | Org-wide roles             | Project-level roles      |
-| Limit       | 1 per account (Free)       | Unlimited                |
+|       | ワークスペース             | プロジェクト           |
+| ----- | ------------------- | ---------------- |
+| 含むもの  | メンバー、プロジェクト、請求      | コンテンツ、ページ、ファイル   |
+| 請求    | ワークスペース単位           | ワークスペースから継承      |
+| 権限    | 組織全体のロール            | プロジェクト単位のロール     |
+| 上限    | アカウントごとに 1 つ（無料プラン） | 無制限              |
 
-### When to create a new workspace vs. a new project
+### 新しいワークスペースとプロジェクト、どちらを作るべきか
 
-Create a **new project** when you're starting a distinct piece of work — a new product, a separate documentation site, or a team initiative. Projects are cheap and easy to manage.
+新しい製品、別のドキュメントサイト、チームの取り組みなど、独立した作業を始めるときは **新しいプロジェクト** を作成しましょう。プロジェクトは手軽に作れて管理も簡単です。
 
-Create a **new workspace** only when you need a completely separate billing and membership boundary — for example, an agency managing work for a different client, or a personal account kept separate from your employer.
+**新しいワークスペース** を作るのは、請求とメンバーの境界を完全に分ける必要がある場合だけにしましょう。たとえば、別のクライアントの作業を管理する代理店や、勤務先とは分けておきたい個人アカウントなどです。
 
 {% hint style="warning" %}
-Switching content between workspaces is not straightforward. If in doubt, start with a new project inside your existing workspace.
+ワークスペース間でコンテンツを移すのは簡単ではありません。迷った場合は、既存のワークスペース内に新しいプロジェクトを作るところから始めてください。
 {% endhint %}
 
-### Related articles
+### 関連記事
 
-* Inviting team members to your workspace
-* Setting up a custom domain
+* ワークスペースへのチームメンバーの招待
+* カスタムドメインの設定

@@ -1,41 +1,41 @@
 ---
-description: Help improve the platform by contributing feedback, bug reports, and ideas.
+description: フィードバック、バグ報告、アイデアを寄せて、プラットフォームの改善に協力しましょう。
 icon: hand-holding-heart
 ---
 
-# Contributing to the platform
+# プラットフォームへの貢献
 
-We build this platform with our community. There are a few ways you can contribute and help shape what we build next.
+このプラットフォームは、コミュニティとともに作っています。次に何を作るかを一緒に形づくるために、いくつかの貢献方法があります。
 
-### Reporting bugs
+### バグを報告する
 
-Found something that's not working as expected? We want to know.
+期待どおりに動作しないものを見つけましたか？ ぜひ教えてください。
 
-When reporting a bug, please include:
+バグを報告する際は、次の情報を含めてください。
 
-* A clear description of what happened vs. what you expected
-* Steps to reproduce the issue
-* Your browser, operating system, and plan
-* Screenshots or a screen recording if relevant
+* 何が起きたか、そして何を期待していたかの明確な説明
+* 問題を再現する手順
+* ご利用のブラウザ、OS、プラン
+* 関連する場合はスクリーンショットや画面録画
 
-You can report bugs via the community forum or directly through [support](https://example.com/support).
+バグは、コミュニティフォーラムまたは [サポート](https://example.com/support) から直接報告できます。
 
-### Suggesting features
+### 機能を提案する
 
-We track feature requests in the community forum under the **Ideas** category. Before submitting, search to see if your idea already exists — if it does, upvote it rather than creating a duplicate.
+機能リクエストは、コミュニティフォーラムの **Ideas** カテゴリーで管理しています。投稿する前に、同じアイデアがすでにないか検索してください。すでにある場合は、重複を作らずにそのアイデアに投票してください。
 
-A good feature request explains:
+良い機能リクエストには、次の点が説明されています。
 
-* The problem you're trying to solve
-* How you're currently working around it (if at all)
-* Why you think it would be useful to others
+* 解決しようとしている問題
+* 現在どのように回避しているか（回避策がある場合）
+* なぜ他の人にとっても役立つと考えるか
 
-We review and respond to ideas regularly, and use upvotes to help prioritise our roadmap.
+寄せられたアイデアは定期的に確認・返信しており、投票数をロードマップの優先順位付けに活用しています。
 
-### Writing about us
+### 私たちについて発信する
 
-If you've written a blog post, tutorial, or made a video about the platform, we'd love to see it. Share it in the **Showcase** category on the forum — popular community content gets featured in our newsletter and social channels.
+プラットフォームに関するブログ記事、チュートリアル、動画を作成された場合は、ぜひ拝見したいです。フォーラムの **Showcase** カテゴリーで共有してください。人気のコミュニティコンテンツは、ニュースレターや SNS で紹介されます。
 
-### Participating in research
+### リサーチに参加する
 
-From time to time we invite users to participate in user research sessions — interviews, usability tests, and surveys. If you'd like to be considered, opt in under **Settings → Account → Research participation**.
+私たちは時折、ユーザーをユーザーリサーチ（インタビュー、ユーザビリティテスト、アンケート）に招待しています。参加を希望される場合は、**設定 → アカウント → リサーチ参加** でオプトインしてください。

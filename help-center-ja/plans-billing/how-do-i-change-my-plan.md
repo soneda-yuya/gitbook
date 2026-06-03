@@ -1,48 +1,48 @@
 ---
-description: Upgrade, downgrade, or switch between billing cycles at any time.
+description: アップグレード、ダウングレード、請求サイクルの切り替えはいつでも行えます。
 icon: right-left
 ---
 
-# How do I change my plan?
+# プランを変更するには？
 
-You can change your plan at any time from your workspace billing settings. Changes take effect immediately.
+プランは、ワークスペースの請求設定からいつでも変更できます。変更はただちに反映されます。
 
-### Upgrading your plan
+### プランをアップグレードする
 
 {% stepper %}
 {% step %}
-#### Go to billing settings
+#### 請求設定に移動する
 
-Navigate to **Settings → Billing → Plans**.
+**設定 → 請求 → プラン** に移動します。
 {% endstep %}
 
 {% step %}
-#### Select a new plan
+#### 新しいプランを選ぶ
 
-Click **Upgrade** on the plan you want to move to. You'll see a summary of the changes and any prorated charges.
+移行したいプランの **アップグレード** をクリックします。変更内容の概要と、日割りの請求額が表示されます。
 {% endstep %}
 
 {% step %}
-#### Confirm payment
+#### 支払いを確定する
 
-Review the charges and click **Confirm upgrade**. Your new plan is active immediately.
+請求内容を確認し、**アップグレードを確定** をクリックします。新しいプランはただちに有効になります。
 {% endstep %}
 {% endstepper %}
 
-When you upgrade mid-cycle, you're charged a prorated amount for the remainder of the current billing period. Your next full charge will be on your regular billing date.
+サイクルの途中でアップグレードすると、現在の請求期間の残り分について日割りで請求されます。次回の通常請求は、いつもの請求日に行われます。
 
-### Downgrading your plan
+### プランをダウングレードする
 
-Downgrades take effect at the end of your current billing period — you keep your current features until then.
+ダウングレードは現在の請求期間の終了時に反映されます。それまでは現在の機能を引き続き利用できます。
 
 {% hint style="warning" %}
-Before downgrading, check that your usage is within the limits of your new plan. If you have more members, projects, or content than the lower plan allows, you'll need to reduce usage before the downgrade takes effect.
+ダウングレードの前に、使用状況が新しいプランの上限内に収まっているか確認してください。メンバー、プロジェクト、コンテンツが下位プランの上限を超えている場合は、ダウングレードが反映される前に使用量を減らす必要があります。
 {% endhint %}
 
-### Switching between monthly and annual billing
+### 月払いと年払いを切り替える
 
-You can switch to annual billing at any time to receive a discount. The switch takes effect at your next renewal date. Switching from annual back to monthly is possible but will take effect at the end of your annual term.
+割引を受けるために、いつでも年払いに切り替えられます。切り替えは次回の更新日に反映されます。年払いから月払いへの切り替えも可能ですが、年間契約期間の終了時に反映されます。
 
-### Cancelling
+### 解約する
 
-To cancel your subscription, go to **Settings → Billing → Plans** and click **Cancel plan**. Your workspace will revert to the Free plan at the end of your billing period. Your content is not deleted.
+サブスクリプションを解約するには、**設定 → 請求 → プラン** に移動し、**プランを解約** をクリックします。ワークスペースは請求期間の終了時に無料プランに戻ります。コンテンツが削除されることはありません。

@@ -1,60 +1,60 @@
 ---
-description: Connect external tools to bring your content and workflows together.
+description: 外部ツールを接続して、コンテンツとワークフローを 1 つにまとめます。
 icon: plug-circle-plus
 ---
 
-# Connecting a third-party app
+# サードパーティアプリの接続
 
-Integrations let you pull content in from other platforms, push updates out, or automate parts of your workflow.
+連携を使うと、他のプラットフォームからコンテンツを取り込んだり、更新を送り出したり、ワークフローの一部を自動化したりできます。
 
-### Available integrations
+### 利用できる連携
 
-We currently support integrations with the following categories of tools:
+現在、次のカテゴリーのツールとの連携に対応しています。
 
-* **Version control** — connect your code repositories to sync and trigger workflows
-* **Communication** — post notifications and updates to your team's messaging tools
-* **Support** — link your helpdesk to surface relevant content for your support team
-* **Analytics** — track visitor behaviour on your published sites
-* **SSO providers** — authenticate your team via your existing identity provider
+* **バージョン管理** — コードリポジトリを接続して、同期やワークフローのトリガーを行う
+* **コミュニケーション** — チームのメッセージングツールに通知や更新を投稿する
+* **サポート** — ヘルプデスクを連携し、サポートチームに関連コンテンツを表示する
+* **アナリティクス** — 公開サイトの訪問者の行動を追跡する
+* **SSO プロバイダー** — 既存の ID プロバイダーでチームを認証する
 
-For a full list see **Settings → Integrations → Browse**.
+すべての一覧は **設定 → 連携 → 一覧を見る** で確認できます。
 
-### Connecting an integration
+### 連携を接続する
 
 {% stepper %}
 {% step %}
-#### Open the integrations page
+#### 連携ページを開く
 
-Go to **Settings → Integrations** and click **Browse all integrations**.
+**設定 → 連携** に移動し、**すべての連携を見る** をクリックします。
 {% endstep %}
 
 {% step %}
-#### Choose an integration
+#### 連携を選ぶ
 
-Find the app you want to connect and click **Install**.
+接続したいアプリを見つけて **インストール** をクリックします。
 {% endstep %}
 
 {% step %}
-#### Authenticate
+#### 認証する
 
-You'll be redirected to the third-party app to grant access. Make sure you're logged in to the correct account before approving.
+サードパーティアプリにリダイレクトされ、アクセスを許可します。承認する前に、正しいアカウントでログインしていることを確認してください。
 {% endstep %}
 
 {% step %}
-#### Configure
+#### 設定する
 
-Once connected, you'll be returned to your settings where you can configure sync frequency, which content to include, and any app-specific options.
+接続が完了すると設定画面に戻り、同期頻度、含めるコンテンツ、アプリ固有のオプションなどを設定できます。
 {% endstep %}
 {% endstepper %}
 
-### Managing connected integrations
+### 接続済みの連携を管理する
 
-You can review, reconfigure, or disconnect integrations at any time from **Settings → Integrations → Connected**.
+接続済みの連携は、**設定 → 連携 → 接続済み** からいつでも確認、再設定、切断できます。
 
 {% hint style="info" %}
-Disconnecting an integration does not delete any content that was already synced — it just stops future syncs.
+連携を切断しても、すでに同期されたコンテンツが削除されることはありません。以降の同期が停止するだけです。
 {% endhint %}
 
-### Permissions and access
+### 権限とアクセス
 
-Integrations run with the permissions of the account used during authentication. We recommend using a service account or bot user where possible, to avoid disruption if an individual user leaves your organisation.
+連携は、認証時に使用したアカウントの権限で実行されます。個々のユーザーが組織を離れた場合に影響が出ないよう、可能な限りサービスアカウントや Bot ユーザーを使うことをおすすめします。

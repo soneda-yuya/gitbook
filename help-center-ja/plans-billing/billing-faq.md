@@ -1,62 +1,62 @@
 ---
-description: Answers to the most common billing questions.
+description: 請求に関する最もよくある質問への回答。
 icon: circle-question
 ---
 
-# Billing FAQ
+# 請求に関するよくある質問
 
 <details>
 
-<summary>When am I charged?</summary>
+<summary>いつ請求されますか？</summary>
 
-You're charged on the date you first subscribed, then on the same date each month or year depending on your billing cycle. You can see your next charge date under **Settings → Billing → Overview**.
+最初にサブスクリプションを開始した日に請求され、その後は請求サイクルに応じて毎月または毎年、同じ日に請求されます。次回の請求日は **設定 → 請求 → 概要** で確認できます。
 
 </details>
 
 <details>
 
-<summary>What payment methods do you accept?</summary>
+<summary>どの支払い方法に対応していますか？</summary>
 
-We accept all major credit and debit cards and bank transfers for annual Enterprise plans. We don't currently accept PayPal.
-
-</details>
-
-<details>
-
-<summary>Can I get a refund?</summary>
-
-We offer a full refund within 14 days of your initial purchase or renewal if you haven't made significant use of the platform during that period. Prorated refunds for unused time are not available outside this window. [Contact support](https://example.com/support) to request a refund.
+主要なクレジットカードおよびデビットカードのすべてに対応しているほか、年払いの Enterprise プランでは銀行振込にも対応しています。現在、PayPal には対応していません。
 
 </details>
 
 <details>
 
-<summary>How do I get an invoice?</summary>
+<summary>返金は受けられますか？</summary>
 
-Invoices are emailed automatically after each charge. You can also download past invoices from **Settings → Billing → Invoices**. To add a billing address, VAT number, or purchase order number to your invoices, go to **Settings → Billing → Billing details**.
-
-</details>
-
-<details>
-
-<summary>Do you support VAT exemption?</summary>
-
-Yes. If your organisation is VAT-exempt, add your VAT number under **Settings → Billing → Billing details** and it will be applied to future invoices. We cannot retroactively adjust past invoices.
+初回購入または更新から 14 日以内で、その期間中にプラットフォームを大きく利用していない場合は、全額返金いたします。この期間を過ぎた未使用分の日割り返金には対応していません。返金をご希望の場合は [サポートにお問い合わせ](https://example.com/support) ください。
 
 </details>
 
 <details>
 
-<summary>What happens if my payment fails?</summary>
+<summary>請求書はどうやって入手できますか？</summary>
 
-If a payment fails, we'll retry it over the following 7 days and send you an email notification. If payment is not resolved within that period, your workspace will be downgraded to the Free plan. Your content is not deleted.
+請求書は各請求の後に自動的にメールで送付されます。過去の請求書は **設定 → 請求 → 請求書** からダウンロードすることもできます。請求書に請求先住所、VAT 番号、発注番号を追加するには、**設定 → 請求 → 請求情報** に移動してください。
 
 </details>
 
 <details>
 
-<summary>Can I have separate billing for different workspaces?</summary>
+<summary>VAT 免税には対応していますか？</summary>
 
-Yes — each workspace has its own billing. If you manage multiple workspaces, each one can be on a different plan and billed separately.
+はい。組織が VAT 免税の場合は、**設定 → 請求 → 請求情報** で VAT 番号を追加すると、今後の請求書に適用されます。過去の請求書をさかのぼって調整することはできません。
+
+</details>
+
+<details>
+
+<summary>支払いが失敗した場合はどうなりますか？</summary>
+
+支払いが失敗した場合は、その後 7 日間にわたって再試行し、メールで通知します。その期間内に支払いが解決されない場合、ワークスペースは無料プランにダウングレードされます。コンテンツが削除されることはありません。
+
+</details>
+
+<details>
+
+<summary>ワークスペースごとに請求を分けられますか？</summary>
+
+はい。各ワークスペースは独自の請求を持ちます。複数のワークスペースを管理している場合、それぞれを異なるプランにして個別に請求できます。
 
 </details>

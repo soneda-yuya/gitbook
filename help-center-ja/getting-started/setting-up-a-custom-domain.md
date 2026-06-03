@@ -1,31 +1,31 @@
 ---
-description: Point your own domain or subdomain at your published site.
+description: 独自のドメインまたはサブドメインを公開サイトに向けます。
 icon: globe
 ---
 
-# Setting up a custom domain
+# カスタムドメインの設定
 
-By default your site is published at a subdomain of our platform. You can replace this with your own domain (e.g. `docs.yourcompany.com`) on any paid plan.
+デフォルトでは、サイトは当プラットフォームのサブドメインで公開されます。有料プランであれば、これを独自のドメイン（例：`docs.yourcompany.com`）に置き換えられます。
 
-### Prerequisites
+### 前提条件
 
-* A paid plan (Pro or above)
-* Access to your domain's DNS settings
-* A published site
+* 有料プラン（Pro 以上）
+* ドメインの DNS 設定へのアクセス権
+* 公開済みのサイト
 
-### Steps
+### 手順
 
 {% stepper %}
 {% step %}
-### Add your domain in settings
+### 設定でドメインを追加する
 
-Go to **Settings → Publishing → Custom domain** and enter the domain or subdomain you want to use (e.g. `docs.yourcompany.com`). Click **Save**.
+**設定 → 公開 → カスタムドメイン** に移動し、使用したいドメインまたはサブドメイン（例：`docs.yourcompany.com`）を入力します。**保存** をクリックします。
 {% endstep %}
 
 {% step %}
-### Create a CNAME record
+### CNAME レコードを作成する
 
-In your DNS provider, create a CNAME record pointing your subdomain to the address shown in your settings. Changes can take up to 48 hours to propagate, though usually it's much faster.
+DNS プロバイダーで、サブドメインを設定に表示されたアドレスに向ける CNAME レコードを作成します。変更の反映には最大 48 時間かかることがありますが、通常はもっと早く反映されます。
 
 ```
 Type:  CNAME
@@ -35,20 +35,20 @@ Value: sites.example-platform.com
 {% endstep %}
 
 {% step %}
-### Verify and activate
+### 検証して有効化する
 
-Return to **Settings → Publishing → Custom domain** and click **Verify**. Once verified, SSL is provisioned automatically — this usually takes a few minutes.
+**設定 → 公開 → カスタムドメイン** に戻り、**検証** をクリックします。検証が完了すると、SSL が自動的にプロビジョニングされます。これは通常、数分で完了します。
 {% endstep %}
 {% endstepper %}
 
 {% hint style="info" %}
-Using an apex domain (e.g. `yourcompany.com` without a subdomain)? You'll need to set an ALIAS or ANAME record instead of a CNAME. Not all DNS providers support this — check your provider's documentation.
+エイペックスドメイン（例：サブドメインなしの `yourcompany.com`）を使いますか？ その場合は、CNAME ではなく ALIAS または ANAME レコードを設定する必要があります。すべての DNS プロバイダーがこれに対応しているわけではないため、ご利用プロバイダーのドキュメントを確認してください。
 {% endhint %}
 
-### Troubleshooting
+### トラブルシューティング
 
-**Verification keeps failing** Make sure there are no conflicting DNS records for the same subdomain. An existing A record will block the CNAME.
+**検証が何度も失敗する** 同じサブドメインに対して競合する DNS レコードがないことを確認してください。既存の A レコードがあると CNAME がブロックされます。
 
-**SSL certificate not provisioning** SSL is issued automatically after DNS verification. If it hasn't appeared after 30 minutes, try clicking **Verify** again.
+**SSL 証明書がプロビジョニングされない** SSL は DNS 検証の後に自動的に発行されます。30 分経っても表示されない場合は、もう一度 **検証** をクリックしてみてください。
 
-**Site loads but shows an SSL warning** This usually means a cached or old certificate. Try clearing your browser cache, or wait a few more minutes for propagation to complete.
+**サイトは読み込まれるが SSL 警告が表示される** これは通常、キャッシュされた古い証明書が原因です。ブラウザのキャッシュをクリアするか、反映が完了するまでもう少し待ってください。

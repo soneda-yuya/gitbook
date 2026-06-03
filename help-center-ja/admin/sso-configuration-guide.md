@@ -1,61 +1,60 @@
 ---
 description: >-
-  Configure single sign-on so your team can log in with your existing identity
-  provider.
+  シングルサインオンを設定して、チームが既存の ID プロバイダーでログインできるようにします。
 icon: key
 ---
 
-# SSO configuration guide
+# SSO 設定ガイド
 
-Single sign-on (SSO) lets your team authenticate using your existing identity provider (IdP) rather than a separate password. SSO is available on Business and Enterprise plans.
+シングルサインオン（SSO）を使うと、チームは別途パスワードを用意するのではなく、既存の ID プロバイダー（IdP）を使って認証できます。SSO は Business および Enterprise プランで利用できます。
 
-### Supported providers
+### 対応プロバイダー
 
-We support any SAML 2.0-compatible identity provider, including most enterprise IdPs. Check your provider's documentation for instructions on creating a SAML application.
+SAML 2.0 に対応した ID プロバイダーであれば、主要なエンタープライズ IdP を含めて利用できます。SAML アプリケーションの作成方法については、ご利用プロバイダーのドキュメントを確認してください。
 
-### Setting up SSO
+### SSO を設定する
 
 {% stepper %}
 {% step %}
-#### Create an application in your IdP
+#### IdP でアプリケーションを作成する
 
-In your identity provider's admin console, create a new SAML application. You'll need the following values from our settings page:
+ID プロバイダーの管理コンソールで、新しい SAML アプリケーションを作成します。設定ページから次の値が必要になります。
 
-* **ACS URL** (also called the Reply URL or Callback URL)
-* **Entity ID** (also called the Audience URI)
+* **ACS URL**（Reply URL または Callback URL とも呼ばれます）
+* **エンティティ ID**（Audience URI とも呼ばれます）
 
-These are available under **Settings → Security → SSO**.
+これらは **設定 → セキュリティ → SSO** で確認できます。
 {% endstep %}
 
 {% step %}
-#### Copy your IdP metadata
+#### IdP のメタデータをコピーする
 
-From your identity provider, copy the **Metadata URL** or download the **Metadata XML** file.
+ID プロバイダーから **メタデータ URL** をコピーするか、**メタデータ XML** ファイルをダウンロードします。
 {% endstep %}
 
 {% step %}
-#### Configure SSO in your workspace
+#### ワークスペースで SSO を設定する
 
-Go to **Settings → Security → SSO**, paste your Metadata URL (or upload the XML file), and click **Save**.
+**設定 → セキュリティ → SSO** に移動し、メタデータ URL を貼り付ける（または XML ファイルをアップロードする）して、**保存** をクリックします。
 {% endstep %}
 
 {% step %}
-#### Test the connection
+#### 接続をテストする
 
-Click **Test SSO** to verify the configuration before enabling it for your whole team. A test login window will open — complete the login and you'll see a success or error message.
+チーム全体で有効にする前に、**SSO をテスト** をクリックして設定を確認します。テスト用のログインウィンドウが開くので、ログインを完了すると成功またはエラーのメッセージが表示されます。
 {% endstep %}
 
 {% step %}
-#### Enable SSO
+#### SSO を有効にする
 
-Once the test passes, toggle **Enforce SSO** to on. All workspace members will now be required to log in via your IdP.
+テストが通ったら、**SSO を強制** をオンに切り替えます。これ以降、すべてのワークスペースメンバーは IdP 経由でのログインが必須になります。
 {% endstep %}
 {% endstepper %}
 
 {% hint style="warning" %}
-Make sure you can log in via SSO before enabling enforcement. If SSO breaks after enforcement is on, contact support — we can disable it for you from the backend.
+強制を有効にする前に、必ず SSO でログインできることを確認してください。強制を有効にした後に SSO が動かなくなった場合は、サポートにお問い合わせください。バックエンドから無効化できます。
 {% endhint %}
 
-### Provisioning and deprovisioning
+### プロビジョニングとデプロビジョニング
 
-With SCIM provisioning enabled, users are automatically added to or removed from your workspace when you add or remove them in your IdP. SCIM setup is available under **Settings → Security → SCIM**.
+SCIM プロビジョニングを有効にすると、IdP でユーザーを追加・削除した際に、ワークスペースへの追加・削除が自動的に行われます。SCIM の設定は **設定 → セキュリティ → SCIM** で行えます。

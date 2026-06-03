@@ -1,50 +1,50 @@
 ---
-description: Everything you need to do to go from sign-up to a published site.
+description: 登録からサイト公開までに必要なことのすべて。
 icon: clipboard-list
 ---
 
-# Getting started checklist
+# はじめにチェックリスト
 
-New here? Follow these steps to get up and running as quickly as possible.
+初めてご利用ですか？ できるだけ早く使い始められるよう、次の手順に従ってください。
 
 {% stepper %}
 {% step %}
-#### Create your workspace
+#### ワークスペースを作成する
 
-Your workspace is your home base. Give it your company or team name — you can change this later.
+ワークスペースはあなたの拠点です。会社名やチーム名を付けましょう。これは後から変更できます。
 {% endstep %}
 
 {% step %}
-#### Invite your team
+#### チームを招待する
 
-Head to **Settings → Members** and invite colleagues by email. Assign roles based on what they need to do: editors can create and edit content, reviewers can comment, and admins can manage settings.
+**設定 → メンバー** に移動し、同僚をメールで招待します。それぞれが必要とする作業に応じてロールを割り当てます。編集者はコンテンツの作成・編集ができ、レビュアーはコメントができ、管理者は設定を管理できます。
 {% endstep %}
 
 {% step %}
-#### Create your first project
+#### 最初のプロジェクトを作成する
 
-Click **New project** from your workspace dashboard. Choose a template or start from scratch.
+ワークスペースのダッシュボードから **新しいプロジェクト** をクリックします。テンプレートを選ぶか、ゼロから始めましょう。
 {% endstep %}
 
 {% step %}
-#### Add your content
+#### コンテンツを追加する
 
-Start writing pages, or import existing content from Markdown files, a URL, or a supported third-party platform.
+ページを書き始めるか、Markdown ファイル、URL、対応するサードパーティプラットフォームから既存のコンテンツをインポートします。
 {% endstep %}
 
 {% step %}
-#### Customise your site
+#### サイトをカスタマイズする
 
-Add your logo, set your brand colours, and configure your navigation under **Settings → Appearance**.
+**設定 → 外観** で、ロゴの追加、ブランドカラーの設定、ナビゲーションの構成を行います。
 {% endstep %}
 
 {% step %}
-#### Publish
+#### 公開する
 
-When you're ready, hit **Publish**. Your site will be live at your platform subdomain — or set up a custom domain to use your own.
+準備ができたら **公開** をクリックします。サイトはプラットフォームのサブドメインで公開されます。独自のドメインを使う場合は、カスタムドメインを設定しましょう。
 {% endstep %}
 {% endstepper %}
 
 {% hint style="success" %}
-Done all of the above? You're all set. Check out the rest of the help centre if you run into anything, or use the **Ask** button to chat with the assistant.
+上記をすべて完了しましたか？ これで準備完了です。困ったことがあればヘルプセンターの他の記事を確認するか、**質問する** ボタンからアシスタントにチャットしてください。
 {% endhint %}

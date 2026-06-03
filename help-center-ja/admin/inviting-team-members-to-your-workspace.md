@@ -1,56 +1,56 @@
 ---
-description: Add team members to your workspace and assign them the right roles.
+description: ワークスペースにチームメンバーを追加し、適切なロールを割り当てます。
 icon: user-plus
 ---
 
-# Inviting team members to your workspace
+# ワークスペースへのチームメンバーの招待
 
-You can invite as many team members as your plan allows from your workspace settings.
+ワークスペースの設定から、ご利用プランで許可されている人数までチームメンバーを招待できます。
 
-### Sending invitations
+### 招待を送信する
 
 {% stepper %}
 {% step %}
-#### Open member settings
+#### メンバー設定を開く
 
-Go to **Settings → Members → Invite**.
+**設定 → メンバー → 招待** に移動します。
 {% endstep %}
 
 {% step %}
-#### Enter email addresses
+#### メールアドレスを入力する
 
-Type or paste one or more email addresses. You can invite multiple people at once by separating addresses with commas.
+メールアドレスを 1 つ以上入力または貼り付けます。アドレスをカンマで区切ることで、複数の人を一度に招待できます。
 {% endstep %}
 
 {% step %}
-#### Choose a role
+#### ロールを選ぶ
 
-Select the role to assign to each invitee. See the roles section below for guidance on which to choose.
+各招待者に割り当てるロールを選択します。どれを選ぶべきかは、下のロールのセクションを参照してください。
 {% endstep %}
 
 {% step %}
-#### Send the invite
+#### 招待を送信する
 
-Click **Send invitations**. Each person will receive an email with a link to accept and join your workspace.
+**招待を送信** をクリックします。各メンバーに、招待を承諾してワークスペースに参加するためのリンクが記載されたメールが届きます。
 {% endstep %}
 {% endstepper %}
 
-Invitations expire after 7 days. If someone hasn't accepted, you can resend from **Settings → Members → Pending invitations**.
+招待は 7 日後に期限切れになります。承諾されていない場合は、**設定 → メンバー → 保留中の招待** から再送信できます。
 
-### Roles
+### ロール
 
-| Role         | What they can do                                   |
-| ------------ | -------------------------------------------------- |
-| **Admin**    | Manage settings, billing, members, and all content |
-| **Editor**   | Create, edit, and publish content                  |
-| **Reviewer** | Comment on content, but not edit or publish        |
-| **Viewer**   | Read published and draft content                   |
-| **Guest**    | Read published content only (does not use a seat)  |
+| ロール          | できること                                |
+| ------------ | ------------------------------------ |
+| **管理者**      | 設定、請求、メンバー、すべてのコンテンツを管理できる           |
+| **編集者**      | コンテンツの作成、編集、公開ができる                   |
+| **レビュアー**    | コンテンツへのコメントはできるが、編集・公開はできない          |
+| **閲覧者**      | 公開済みおよび下書きのコンテンツを閲覧できる               |
+| **ゲスト**      | 公開済みコンテンツの閲覧のみ（シートを消費しない）            |
 
 {% hint style="info" %}
-Guests are useful for external stakeholders who need to read drafts without being full members. They don't count towards your member limit.
+ゲストは、フルメンバーにならずに下書きを閲覧する必要がある社外の関係者に便利です。メンバー数の上限にはカウントされません。
 {% endhint %}
 
-### Removing members
+### メンバーを削除する
 
-Go to **Settings → Members**, find the person, and click **Remove**. Removing a member immediately revokes their access. Their content is not deleted.
+**設定 → メンバー** に移動し、対象の人を見つけて **削除** をクリックします。メンバーを削除すると、そのアクセス権はただちに取り消されます。そのメンバーのコンテンツは削除されません。

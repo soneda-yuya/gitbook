@@ -1,36 +1,36 @@
-# Table of contents
+# 目次
 
-* [Help Center](README.md)
+* [ヘルプセンター](README.md)
 
-## Getting started
+## はじめに
 
-* [Getting started checklist](getting-started/getting-started-checklist.md)
-* [What's the difference between a workspace and a project?](getting-started/whats-the-difference-between-a-workspace-and-a-project.md)
-* [Setting up a custom domain](getting-started/setting-up-a-custom-domain.md)
+* [はじめにチェックリスト](getting-started/getting-started-checklist.md)
+* [ワークスペースとプロジェクトの違いは？](getting-started/whats-the-difference-between-a-workspace-and-a-project.md)
+* [カスタムドメインの設定](getting-started/setting-up-a-custom-domain.md)
 
-## Plans and billing <a href="#plans-billing" id="plans-billing"></a>
+## プランと請求 <a href="#plans-billing" id="plans-billing"></a>
 
-* [How do I change my plan?](plans-billing/how-do-i-change-my-plan.md)
-* [Billing FAQ](plans-billing/billing-faq.md)
+* [プランを変更するには？](plans-billing/how-do-i-change-my-plan.md)
+* [請求に関するよくある質問](plans-billing/billing-faq.md)
 
-## Admin
+## 管理
 
-* [Inviting team members to your workspace](admin/inviting-team-members-to-your-workspace.md)
-* [SSO configuration guide](admin/sso-configuration-guide.md)
-* [Managing API keys](admin/managing-api-keys.md)
+* [ワークスペースへのチームメンバーの招待](admin/inviting-team-members-to-your-workspace.md)
+* [SSO 設定ガイド](admin/sso-configuration-guide.md)
+* [API キーの管理](admin/managing-api-keys.md)
 
-## Integrations
+## 連携
 
-* [Connecting a third-party app](integrations/connecting-a-third-party-app.md)
-* [Why isn't my integration syncing?](integrations/why-isnt-my-integration-syncing.md)
-* [API rate limits and quotas](integrations/api-rate-limits-and-quotas.md)
+* [サードパーティアプリの接続](integrations/connecting-a-third-party-app.md)
+* [連携が同期されないのはなぜ？](integrations/why-isnt-my-integration-syncing.md)
+* [API のレート制限とクォータ](integrations/api-rate-limits-and-quotas.md)
 
-## Community
+## コミュニティ
 
-* [Contributing to the platform](community/contributing-to-the-platform.md)
-* [Discord community](https://www.gitbook.com/)
+* [プラットフォームへの貢献](community/contributing-to-the-platform.md)
+* [Discord コミュニティ](https://www.gitbook.com/)
 * [GitHub](https://www.gitbook.com/)
 
 ***
 
-* [Product updates](https://app.gitbook.com/o/DaDQkGCM7r2TghFSBFLQ/s/euz6U9T9Ui1Un0dUKuuZ/)
+* [製品アップデート](https://app.gitbook.com/o/DaDQkGCM7r2TghFSBFLQ/s/euz6U9T9Ui1Un0dUKuuZ/)

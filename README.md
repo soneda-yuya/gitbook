@@ -116,6 +116,34 @@ visualizer/       Visualizer ドキュメント
 
 ---
 
+## 6. LLM 向けテキスト（llms.txt / llms-full.txt）
+
+GitBook で公開したサイトは、LLM / AI エージェントから参照しやすいプレーンテキストを **自動生成・公開**します（Free プランでも利用可能な LLM 最適化機能）。サイト URL の末尾に以下を付けるだけで取得できます。
+
+| ファイル | 内容 | 用途 |
+| --- | --- | --- |
+| `/llms.txt` | ページ構成・タイトル・各ページへのリンクを並べた **目次/ナビゲーション** | LLM に「どのページがどこにあるか」を渡す。軽量 |
+| `/llms-full.txt` | 全ページの本文を連結した **完全版（verbatim）** | RAG・インデックス・全文検索など、本文そのものが必要な用途 |
+
+### 本サイトでの実例
+
+- 目次版: <https://yuya-soneda.gitbook.io/reearth/llms.txt>
+- 全文版: <https://yuya-soneda.gitbook.io/reearth/llms-full.txt>
+
+```bash
+# 目次（リンク集）を取得
+curl -s https://yuya-soneda.gitbook.io/reearth/llms.txt
+
+# 全文を取得して LLM に渡す等
+curl -s https://yuya-soneda.gitbook.io/reearth/llms-full.txt
+```
+
+> - `llms.txt` は Help Center / Documentation / API Reference / Changelog などのセクションを横断したリンク集、`llms-full.txt` は各記事の本文・手順・テーブル・OpenAPI スキーマまで含む完全テキストです。
+> - 多言語バリアントを公開している場合は、言語ごとにそれぞれの URL で取得できます。
+> - 公開サイトに対して生成されるため、**非公開（認証必須）サイトの扱いはプラン設定に依存**します。
+
+---
+
 ## 参考リンク
 
 - [GitBook Pricing（公式）](https://www.gitbook.com/pricing)
